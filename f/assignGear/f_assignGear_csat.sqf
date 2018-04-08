@@ -385,6 +385,11 @@ switch (_typeofUnit) do
 		_unit setUnitLoadout [["rhs_weap_pkm","","","",["rhs_100Rnd_762x54mmR",100],[],""],[],["rhs_weap_pya","","","",["rhs_mag_9x19_17",17],[],""],["rhs_uniform_emr_des_patchless",[["ACRE_PRC343",1],["ACE_fieldDressing",10],["ACE_epinephrine",1],["ACE_bloodIV_250",1],["ACE_morphine",10]]],["rhsgref_6b23_khaki",[["rhs_VOG25",5,1],["rhs_mag_rdg2_white",2,1],["rhs_mag_rgo",2,1],["rhs_mag_9x19_17",2,17]]],["rhs_sidor",[["rhs_100Rnd_762x54mmR",2,100]]],"rhs_6b27m_green","rhsusf_shemagh2_gogg_od",["Binocular","","","",[],[],""],["ItemMap","","","ItemCompass","ItemWatch",""]];
 	};
 	
+	case "rif":
+	{
+		_unit setUnitLoadout [["rhs_weap_ak74m_fullplum","rhs_acc_dtk","","",["rhs_30Rnd_545x39_7N10_AK",30],[],""],[],[],["rhs_uniform_emr_des_patchless",[["ACRE_PRC343",1],["ACE_fieldDressing",10],["ACE_epinephrine",1],["ACE_bloodIV_250",1],["ACE_morphine",10]]],["rhsgref_6b23_khaki_rifleman",[["rhs_VOG25",5,1],["rhs_30Rnd_545x39_7N10_AK",5,30],["rhs_30Rnd_545x39_AK_green",1,30]]],["B_Kitbag_cbr",[["rhs_mag_rdg2_white",2,1],["HandGrenade",2,1],["rhs_30Rnd_545x39_7N10_AK",5,30],["rhs_30Rnd_545x39_AK_green",1,30]]],"rhs_6b27m_green","rhsusf_shemagh_gogg_grn",["Binocular","","","",[],[],""],["ItemMap","","","ItemCompass","ItemWatch",""]];
+	};
+	
 	case "lat":
 	{
 		_unit setUnitLoadout [["rhs_weap_ak74m_fullplum","rhs_acc_dtk","","",["rhs_30Rnd_545x39_7N10_AK",30],[],""],["rhs_weap_rpg26","","","",["rhs_rpg26_mag",1],[],""],[],["rhs_uniform_emr_des_patchless",[["ACRE_PRC343",1],["ACE_fieldDressing",10],["ACE_epinephrine",1],["ACE_bloodIV_250",1],["ACE_morphine",10]]],["rhsgref_6b23_khaki_rifleman",[["rhs_VOG25",5,1],["rhs_30Rnd_545x39_7N10_AK",5,30],["rhs_30Rnd_545x39_AK_green",1,30]]],["B_Kitbag_cbr",[["rhs_mag_rdg2_white",2,1],["HandGrenade",2,1],["rhs_30Rnd_545x39_7N10_AK",5,30],["rhs_30Rnd_545x39_AK_green",1,30]]],"rhs_6b27m_green","rhsusf_shemagh_gogg_grn",["Binocular","","","",[],[],""],["ItemMap","","","ItemCompass","ItemWatch",""]];

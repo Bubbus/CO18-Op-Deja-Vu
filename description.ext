@@ -25,9 +25,9 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the F3_CA Mission Development Framework";
-author = "*** Insert mission author name here. ***";
+onLoadName = "Operation Deja Vu";
+onLoadMission = "We have been in this place before";
+author = "Bubbus";
 loadScreen = "ca_logo_large.jpg";
 
 // ============================================================================================
@@ -164,8 +164,8 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
-		subtitle = "";
+		title = "Destroyed all objectives";
+		subtitle = "Good one lads";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -174,8 +174,8 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
-		subtitle = "";
+		title = "Mission success";
+		subtitle = "We call this one the 'blow and go'.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -184,8 +184,8 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
-		subtitle = "";
+		title = "Mission failed";
+		subtitle = "We'll get 'em next time.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -194,8 +194,8 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
-		subtitle = "";
+		title = "Premature detonation";
+		subtitle = "They don't make pills for that.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -204,8 +204,8 @@ class CfgDebriefing
 
 	class End5
 	{
-		title = "Ending #5";
-		subtitle = "";
+		title = "Sole survivor";
+		subtitle = "Good job that lad";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -444,6 +444,10 @@ class CfgFunctions
 			class makeLoadoutDispenser
 			{
 				file = "bub\bub_fnc_makeLoadoutDispenser.sqf";
+			};
+			class jumpIntoGroupVehicle
+			{
+				file = "bub\bub_fnc_jumpIntoGroupVehicle.sqf";
 			};
 		};
 	};
