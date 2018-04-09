@@ -26,7 +26,7 @@ class Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 onLoadName = "Operation Deja Vu";
-onLoadMission = "We have been in this place before";
+onLoadMission = "Feels like we've done this one already";
 author = "Bubbus";
 loadScreen = "ca_logo_large.jpg";
 
@@ -448,6 +448,14 @@ class CfgFunctions
 			class jumpIntoGroupVehicle
 			{
 				file = "bub\bub_fnc_jumpIntoGroupVehicle.sqf";
+			};
+			class addVehicleToZeus
+			{
+				file = "bub\bub_fnc_addVehicleToZeus.sqf";
+			};
+			class addGroupToZeus
+			{
+				file = "bub\bub_fnc_addGroupToZeus.sqf";
 			};
 		};
 	};

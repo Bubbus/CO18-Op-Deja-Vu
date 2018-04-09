@@ -428,6 +428,8 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal ["mpx_daysack8", 2];
 		
 		_unit addItemCargoGlobal ["rhs_mag_m67", 5];
+		_unit addItemCargoGlobal ["rhsusf_m112x4_mag", 6];
+		_unit addItemCargoGlobal ["ACE_Clacker", 3];
 		_unit addItemCargoGlobal ["SmokeShell", 5];
 		_unit addItemCargoGlobal ["SmokeShellGreen", 2];
 		_unit addItemCargoGlobal ["SmokeShellPurple", 2];
@@ -469,6 +471,47 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal ["mpx_daysack8", 6];
 		
 		_unit addItemCargoGlobal ["rhs_mag_m67", 10];
+		_unit addItemCargoGlobal ["rhsusf_m112x4_mag", 12];
+		_unit addItemCargoGlobal ["ACE_Clacker", 6];
+		_unit addItemCargoGlobal ["SmokeShell", 10];
+		_unit addItemCargoGlobal ["SmokeShellGreen", 2];
+		_unit addItemCargoGlobal ["SmokeShellPurple", 2];
+
+		_unit addItemCargoGlobal ["ACRE_PRC343", 12];
+		_unit addItemCargoGlobal ["ACRE_PRC152", 4];
+		_unit addItemCargoGlobal ["ACRE_PRC148", 3];
+		
+		_unit addItemCargoGlobal ["Toolkit", 1];
+};
+
+
+case "jackal":
+{
+		
+		_unit addItemCargoGlobal ["rhs_weap_hk416d145", 2];
+		_unit addItemCargoGlobal ["rhs_weap_hk416d10", 1];
+		_unit addItemCargoGlobal ["UK3CB_BAF_L131A1", 2];
+		_unit addItemCargoGlobal ["UK3CB_BAF_AT4_CS_AT_Launcher", 4];
+
+		_unit addItemCargoGlobal ["ACE_fieldDressing", 50];
+		_unit addItemCargoGlobal ["ACE_epinephrine", 20];
+		_unit addItemCargoGlobal ["ACE_morphine", 50];
+		_unit addItemCargoGlobal ["ACE_bloodIV", 10];
+
+		_unit addItemCargoGlobal ["ACE_20Rnd_762x51_M993_AP_Mag", 30];
+		_unit addItemCargoGlobal ["UK3CB_BAF_762_L42A1_20Rnd_T", 5];
+		_unit addItemCargoGlobal ["rhs_200rnd_556x45_B_SAW", 10];
+		_unit addItemCargoGlobal ["rhs_200rnd_556x45_T_SAW", 4];
+		_unit addItemCargoGlobal ["rhs_mag_30Rnd_556x45_Mk318_Stanag", 100];
+		_unit addItemCargoGlobal ["UK3CB_BAF_9_17Rnd", 10];
+		_unit addItemCargoGlobal ["1Rnd_HE_Grenade_shell", 20];
+		_unit addItemCargoGlobal ["ACE_SpareBarrel", 1];
+
+		_unit addItemCargoGlobal ["mpx_daysack8", 6];
+		
+		_unit addItemCargoGlobal ["rhs_mag_m67", 10];
+		_unit addItemCargoGlobal ["rhsusf_m112x4_mag", 12];
+		_unit addItemCargoGlobal ["ACE_Clacker", 6];
 		_unit addItemCargoGlobal ["SmokeShell", 10];
 		_unit addItemCargoGlobal ["SmokeShellGreen", 2];
 		_unit addItemCargoGlobal ["SmokeShellPurple", 2];

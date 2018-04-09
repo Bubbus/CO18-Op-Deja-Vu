@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1847;
+		nextID=1854;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=213;
+		nextID=283;
 	};
 	class Camera
 	{
-		pos[]={12159.279,371.83447,17759.479};
-		dir[]={-0.91743517,-0.37619653,0.12980139};
-		up[]={-0.37250191,0.92653519,0.052702226};
-		aside[]={0.14009072,1.0605436e-007,0.99016237};
+		pos[]={3022.2156,727.52899,16111.393};
+		dir[]={-0.81607282,-0.57451373,0.064461671};
+		up[]={-0.57276481,0.81848633,0.045242872};
+		aside[]={0.078748904,-1.3990211e-007,0.99698579};
 	};
 };
 binarizationWanted=0;
@@ -122,13 +122,14 @@ addons[]=
 	"CUP_Misc_e_Config",
 	"acre_sys_radio",
 	"CUP_CAMisc",
-	"CUP_ibr_plants"
+	"CUP_ibr_plants",
+	"UK3CB_BAF_Units_Desert"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=69;
+		items=70;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -586,6 +587,13 @@ class AddonsMetaData
 			className="CUP_ibr_plants";
 			name="CUP_ibr_plants";
 		};
+		class Item69
+		{
+			className="UK3CB_BAF_Units_Desert";
+			name="3CB BAF Units - Desert";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
 	};
 };
 randomSeed=1116085;
@@ -785,7 +793,7 @@ class Mission
 		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2020;
+		year=2024;
 		month=4;
 		day=11;
 		hour=8;
@@ -795,7 +803,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=161;
+		items=166;
 		class Item0
 		{
 			dataType="Logic";
@@ -917,7 +925,7 @@ class Mission
 			init="call{this addCuratorEditableObjects [(vehicles + allUnits),true];}";
 			id=107;
 			type="ModuleCurator_F";
-			atlOffset=48.647949;
+			atlOffset=48.647888;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2388,7 +2396,7 @@ class Mission
 			{
 				name="limar_spawn";
 				condition="call{this}";
-				onActivation="call{[] spawn   " \n "{  " \n "    if (!isServer) exitWith {}; " \n " " \n "    [[""driver"",""driver"",""ftl""], ""limar_4"", ""limar_4"", ""LOP_TKA_UAZ_DshKM"", ""opf_f"", east] call ca_fnc_spawnvehicleattack; " \n " " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""limar_1"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""limar_2"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;   " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""mat"",""rif"",""rif""], ""limar_3"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n " " \n "};}";
+				onActivation="call{[] spawn   " \n "{  " \n "    if (!isServer) exitWith {}; " \n " " \n "    [[""rif"",""rif"",""ftl""], ""limar_4"", ""limar_4"", ""LOP_TKA_UAZ_DshKM"", ""opf_f"", east] call ca_fnc_spawnvehicleattack; " \n " " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""limar_1"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""limar_2"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;   " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""mat"",""rif"",""rif""], ""limar_3"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n " " \n "};}";
 				sizeA=750;
 				sizeB=750;
 				activationBy="WEST";
@@ -5915,7 +5923,7 @@ class Mission
 			{
 				name="vodka_spawn";
 				condition="call{this}";
-				onActivation="call{[] spawn   " \n "{  " \n "    if (!isServer) exitWith {}; " \n " " \n "    [[""driver"",""driver"",""ftl""], ""vodka_4"", ""vodka_4"", ""vargral_veh"", ""opf_f"", east] call ca_fnc_spawnvehicleattack; " \n " " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""vodka_1"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""vodka_2"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;   " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""mat"",""rif"",""rif""], ""vodka_3"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n " " \n "};}";
+				onActivation="call{[] spawn   " \n "{  " \n "    if (!isServer) exitWith {}; " \n " " \n "    [[""rif"",""rif"",""ftl""], ""vodka_4"", ""vodka_4"", ""vargral_veh"", ""opf_f"", east] call ca_fnc_spawnvehicleattack; " \n " " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""vodka_1"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""lat"",""rif"",""rif""], ""vodka_2"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;   " \n "    sleep 4;  " \n "  " \n "    [[""ftl"",""ar"",""med"",""mat"",""rif"",""rif""], ""vodka_3"", 100, ""opf_f"", east] spawn ca_fnc_spawnpatrol;  " \n " " \n "};}";
 				sizeA=950;
 				sizeB=950;
 				activationBy="WEST";
@@ -5961,7 +5969,7 @@ class Mission
 			position[]={3846.4197,690.42889,17877.529};
 			name="vodka_4";
 			type="Empty";
-			angle=27.924957;
+			angle=27.924946;
 			id=1380;
 			atlOffset=18.293701;
 		};
@@ -7666,15 +7674,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4390.8457,743.78326,16123.812};
-						angles[]={6.2113066,3.6632717,6.2711854};
+						position[]={4390.8452,743.78326,16123.812};
+						angles[]={6.2113123,3.6632714,6.2711778};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
 						skill=0.2;
-						disableSimulation=1;
 					};
 					id=1553;
 					type="Land_Campfire_F";
@@ -12611,6 +12618,7 @@ class Mission
 			};
 			id=1811;
 			type="ClutterCutter";
+			atlOffset=6.1035156e-005;
 		};
 		class Item151
 		{
@@ -12618,7 +12626,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12105.618,342.84244,17894.475};
-				angles[]={-0,3.2093868,0};
+				angles[]={0,3.2093868,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12658,7 +12666,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12105.62,342.84244,17896.807};
-				angles[]={-0,3.2093868,0};
+				angles[]={0,3.2093868,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12698,7 +12706,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12108.222,342.84244,17894.215};
-				angles[]={-0,3.2093868,0};
+				angles[]={0,3.2093868,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12738,7 +12746,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12108.089,342.84244,17896.586};
-				angles[]={-0,3.2093868,0};
+				angles[]={0,3.2093868,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12784,7 +12792,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished HQ Building.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];}";
+				init="call{if (isServer) then {" \n "this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished HQ Building.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];" \n "};}";
 			};
 			id=1816;
 			type="Land_WaterBottle_01_empty_F";
@@ -12824,7 +12832,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished Holiday Home.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];}";
+				init="call{if (isServer) then {" \n "this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished Holiday Home.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];" \n "};}";
 			};
 			id=1817;
 			type="Land_WaterBottle_01_empty_F";
@@ -12865,7 +12873,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished Mortar Base.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];}";
+				init="call{if (isServer) then {" \n "this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished Mortar Base.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];" \n "};}";
 			};
 			id=1818;
 			type="Land_WaterBottle_01_empty_F";
@@ -12906,7 +12914,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Destroyed Vodka Supplies.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];}";
+				init="call{if (isServer) then {" \n "this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Destroyed Vodka Supplies.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];" \n "};}";
 			};
 			id=1819;
 			type="Land_WaterBottle_01_empty_F";
@@ -12946,7 +12954,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Destroyed Carpool.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];}";
+				init="call{if (isServer) then {" \n "this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Destroyed Carpool.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];" \n "};}";
 			};
 			id=1820;
 			type="Land_WaterBottle_01_empty_F";
@@ -12980,18 +12988,215 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4890.8232,522.86578,16954.557};
+				position[]={4890.8232,522.86676,16954.557};
 				angles[]={0.007644542,0,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished Kebab Shop.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];}";
+				init="call{if (isServer) then {" \n "this addEventHandler  " \n "[ " \n " ""Deleted"",  " \n " { " \n "  [ " \n "   ""TaskSucceeded"", " \n "   ["""",""Demolished Kebab Shop.""] " \n "  ] remoteExec [""BIS_fnc_showNotification"", 0]; " \n " } " \n "];" \n "};}";
 			};
 			id=1821;
 			type="Land_WaterBottle_01_empty_F";
-			atlOffset=-0.0009765625;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4375.2544,745.37231,16108.943};
+				angles[]={6.2053437,4.4273243,6.2731848};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[""jackal"", this, ""blu_f""] call f_fnc_assignGear;}";
+			};
+			id=1849;
+			type="UK3CB_BAF_Jackal2_L2A1_D_DDPM";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[1]],[[""UK3CB_BAF_127_100Rnd"",""UK3CB_BAF_762_200Rnd_T""],[9,9]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4377.3501,744.94049,16103.677};
+				angles[]={6.2053399,4.4318447,6.2731848};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[""jackal"", this, ""blu_f""] call f_fnc_assignGear;}";
+			};
+			id=1850;
+			type="UK3CB_BAF_Jackal2_L2A1_D_DDPM";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[1]],[[""UK3CB_BAF_127_100Rnd"",""UK3CB_BAF_762_200Rnd_T""],[9,9]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4372.2485,745.78082,16113.183};
+				angles[]={6.1914506,4.5669856,6.2731848};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[""jackal"", this, ""blu_f""] call f_fnc_assignGear;}";
+			};
+			id=1851;
+			type="UK3CB_BAF_Jackal2_L2A1_D_DDPM";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[1]],[[""UK3CB_BAF_127_100Rnd"",""UK3CB_BAF_762_200Rnd_T""],[9,9]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item164
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4378.1333,744.99445,16107.49};
+				angles[]={0,1.0388374,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1852;
+			type="Land_CamoNet_EAST_EP1";
+			atlOffset=1.2658691;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item165
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4375.0059,745.4187,16111.946};
+				angles[]={0,1.0388374,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1853;
+			type="Land_CamoNet_EAST_EP1";
+			atlOffset=1.2839966;
 			class CustomAttributes
 			{
 				class Attribute0
