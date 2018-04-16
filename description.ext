@@ -25,8 +25,8 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "Operation Deja Vu";
-onLoadMission = "Feels like we've done this one already";
+onLoadName = "Operation Deja 2";
+onLoadMission = "We've just been in this place before.";
 author = "Bubbus";
 loadScreen = "ca_logo_large.jpg";
 
