@@ -5,6 +5,7 @@ params ["_unit", "_corpse"];
 
 if (isDedicated) exitWith {};
 
+
 _setupUnit = 
 {
 	params ["_unit", "_faction"];
@@ -14,6 +15,7 @@ _setupUnit =
 	[_loadout, _unit, _faction] call f_fnc_assignGear;
 	[] execVM "f\radios\radio_init.sqf";
 };
+
 
 _addGroupMenu = 
 {
@@ -25,6 +27,39 @@ _addGroupMenu =
 	{
 		[_unit] execVM "f\JIP\f_JIP_addReinforcementOptionsAction.sqf";
 	};
+};
+
+
+_forceGroup = 
+{
+	params ["_unit"];
+
+	_groupName = _unit getVariable ["forceGroup", ""];
+	
+	if (_groupName == "") exitWith 
+	{
+		_baddieGroup = createGroup east;
+		[_unit] joinSilent _baddieGroup;
+	};
+	
+	_group = grpNull;
+	{
+		scopeName "sqfSucks";
+		if (groupId _x == _groupName) then
+		{
+			_group = _x;
+			breakOut "sqfSucks";
+		};
+	} forEach allGroups;
+
+	if (_group == grpNull) then
+	{
+		_group = createGroup east;
+		_group setGroupIdGlobal [_groupName];
+	};
+	
+	[_unit] joinSilent _group;
+	
 };
 
 
@@ -50,8 +85,8 @@ else
 	// u died and turned evil bro
 	_unit setPos (getmarkerpos "respawn_east");
 	
-	_baddieGroup = createGroup east;
-	[_unit] joinSilent _baddieGroup;
+	// This one's... for the pilots.  Hey.
+	[_unit] spawn _forceGroup;
 	
 	[_unit, "opf_f"] call _setupUnit;
 	
@@ -66,6 +101,7 @@ else
 		
 	};
 	
-	[_unit] spawn _addGroupMenu;
+	// [_unit] spawn _addGroupMenu;
+	
 	
 };

@@ -457,6 +457,10 @@ class CfgFunctions
 			{
 				file = "bub\bub_fnc_addGroupToZeus.sqf";
 			};
+			class addUnflipAction
+			{
+				file = "bub\bub_fnc_addUnflipAction.sqf";
+			};
 		};
 	};
 };

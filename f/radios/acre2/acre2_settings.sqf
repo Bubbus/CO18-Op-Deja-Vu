@@ -59,6 +59,7 @@ f_radios_settings_acre2_language_indfor = ["english"];
 f_radios_settings_acre2_sr_groups_blufor = [
     ["ALPHA",    ["ALPHA"]],
     ["BRAVO",    ["BRAVO"]],
+    ["CHARLIE",    ["CHARLIE"]],
     ["COMMAND",  ["COMMAND"]],
     ["ZEUS",    ["ZEUS"]],
     ["B1",     ["B1"]],
@@ -81,15 +82,14 @@ f_radios_settings_acre2_sr_groups_blufor = [
     ["ADDITIONAL 7",   []],
     ["ADDITIONAL 8",  []],
     ["ADDITIONAL 9",    []],
-    ["ADDITIONAL 10",   []],
-    ["ADDITIONAL 11",     []]
+    ["ADDITIONAL 10",   []]
 ];
 
 f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_blufor;
 f_radios_settings_acre2_sr_groups_indfor = f_radios_settings_acre2_sr_groups_blufor;
 
 f_radios_settings_acre2_lr_groups_blufor = [
-    ["GRND COMMAND 1",    ["COMMAND","ALPHA","BRAVO","ZEUS","ISKATEL","KHRANITEL","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1","ST1","DT1"]],
+    ["GRND COMMAND 1",    ["COMMAND","ALPHA","BRAVO","CHARLIE","ZEUS","ISKATEL","KHRANITEL","HMG1","MAT1","HAT1","MTR1","MSAM1","HSAM1","ST1"]],
     ["GRND COMMAND 2",    ["IFV1","IFV2","IFV3","IFV4","IFV5","IFV6","IFV7","IFV8","TNK1"]],
     ["AIR",  ["TH1","TH2","TH3","T4","TH5","TH6","TH7","TH8","AH1"]],
     ["FAC",	 []],
