@@ -44,8 +44,8 @@
 ["GrpCSAT_IFV2",_ifv, "IFV2", "ColorOrange"] spawn f_fnc_localGroupMarker;
 ["GrpCSAT_TNK1",_tnk, "TNK1", "ColorRed"] spawn f_fnc_localGroupMarker;
 
-["GrpCSAT_TH1",_hel, "TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
-["GrpCSAT_TH2",_hel, "TH2", "ColorRed"] spawn f_fnc_localGroupMarker;
+["ISKATEL",_hel, "ISKATEL", "ColorRed"] spawn f_fnc_localGroupMarker;
+["KHRANITEL",_hel, "KHRANITEL", "ColorRed"] spawn f_fnc_localGroupMarker;
 ["GrpCSAT_TH3",_hel, "TH3", "ColorBlue"] spawn f_fnc_localGroupMarker;
 ["GrpCSAT_TH4",_hel, "TH4", "ColorBlue"] spawn f_fnc_localGroupMarker;
 ["GrpCSAT_TH5",_hel, "TH5", "ColorGreen"] spawn f_fnc_localGroupMarker;
